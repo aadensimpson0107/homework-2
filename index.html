@@ -14,13 +14,49 @@
 
             
             <a-assets>
-                <img id="grass-base" src="stylized_Grass_001_basecolor.jpg">
+                <img id="grass-base" src="assets/Stylized_Grass_001_basecolor.jpg">
+                <img id="grass-base" src="assets/Stylized_Grass_001_ambientOcclusion.jpg">
+                <img id="grass-base" src="assets/Stylized_Grass_001_normal.jpg">
+                <img id="sphericaltreeleaves-base" src="assets\Stylized_Leaves_001_basecolor.jpg">
+                <img id="sphericaltreeleaves-ambient-occlusion" src="assets\Stylized_Leaves_001_ambientOcclu sion.jpg">
+                <img id="sphericaltreeleaves-normal" src="assets\Stylized_Leaves_001_normal.jpg">
+                <img id="conicaltreeleaves-base" src="assets\Stylized_Leaves_002_basecolor.jpg">
+                <img id="conicaltreeleaves-ambient-occlusion" src="assets\Stylized_Leaves_002_ambientOcclu sion.jpg">
+                <img id="conicaltreeleaves-normal" src="assets\Stylized_Leaves_002_normal.jpg">
+                <img id="treetrunk-base" src="assets\Bark_06_basecolor.jpg">
+                <img id="treetrunk-ambient-occlusion" src="assets\Bark_06_ambientOcclusion.jpg">
+                <img id="treetrunk-normal" src="assets\Bark_06_normal.jpg">
+                <img id="sky" src="assets\valley.jpg">
             </a-assets>
+            <a-assets-item
+                        id="kidney"
+                        src="assets\kidney.glb">
+                    </a-assets-item>
+            <a-assets-item
+                        id="needle"
+                        src="assets\needle.glb">
+                    </a-assets-item>
+                    <a-assets-item
+                        id="table"
+                        src="assets\surgerytable.glb">
+                    </a-assets-item>
+                    <a-assets-item
+                        id="ttable"
+                        src="assets\tooltable.glb">
+                    </a-assets-item>
+                    <a-assets-item
+                        id="body"
+                        src="assets\body.glb">
+                    </a-assets-item>
+            <a-sky
+                    src="#sky">
+
+                    </a-sky>
 
 
            
             <a-plane
-                material="src: #grass-base; repeat: 50 50"
+                material="src: #grass-base; repeat: 500 500"
                 position="0 -0.05 0"
                 rotation="-90 0 0"
                 width="500"
@@ -228,11 +264,46 @@
                 height="1.7"
                 depth="0.6">
             </a-box>
+            <a-entity
+    gltf-model="#table"
+    position="9.5 5 -10"
+    rotation="0 90 0"
+    scale="1.5 2 1.5">
+</a-entity>
+
+
+<a-entity
+    gltf-model="#needle"
+    position="5 1.2 -10"
+    rotation="0 0 45"
+    scale="3 3 3">
+</a-entity>
+
+<a-entity
+    gltf-model="#ttable"
+    position="6 0.1 -10"
+    rotation="0 90 0"
+    scale="4 4 4">
+</a-entity>
+            
+<a-entity
+    gltf-model="#body"
+    position="2 2 -10"
+    rotation="90 -90 0 "
+    scale=".2 .2 .2">
+</a-entity>
+<a-entity
+    gltf-model="#kidney"
+    position="6 1.2 -12"
+    rotation="0 0 0"
+    scale=".01 .01 .01">
+</a-entity>
+            
+            
 
 
             
-            <a-sky color="#87CEEB">
-            </a-sky>
+           
 
 
         </a-scene>
